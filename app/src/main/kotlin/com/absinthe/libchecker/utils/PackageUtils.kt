@@ -846,7 +846,7 @@ object PackageUtils {
   ): String {
     val source = item.source?.let { "[${item.source}]" }.orEmpty()
     if (showElfInfo.not()) {
-      return "(${Formatter.formatFileSize(context, item.size, Formatter.FLAG_IEC_UNITS)}) $source"
+      return "(${FileUtils.formatFileSize(item.size)}) $source"
     }
     val elfType =
       "[${elfTypeToString(item.elfType)}]"
@@ -860,7 +860,7 @@ object PackageUtils {
         }
         .orEmpty()
 
-    return "(${Formatter.formatFileSize(context, item.size, Formatter.FLAG_IEC_UNITS)}) $source $elfType $elfClass"
+    return "(${FileUtils.formatFileSize(item.size)}) $source $elfType $elfClass"
   }
 
   /**

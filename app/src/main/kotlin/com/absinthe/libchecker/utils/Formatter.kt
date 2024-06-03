@@ -3,7 +3,7 @@ package com.absinthe.libchecker.utils
 import android.content.Context
 import java.util.Locale
 
-object Formater {
+object Formatter {
   fun formatFileSize(context: Context, roundedBytes: Long): String {
     if (context == null) {
       // nothing to do

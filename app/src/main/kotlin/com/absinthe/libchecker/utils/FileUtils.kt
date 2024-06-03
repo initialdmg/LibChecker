@@ -54,7 +54,7 @@ object FileUtils {
     }
   }
   fun formatFileSize(roundedBytes: Long): String {
-    return formatFileSize(context, roundedBytes, false, Locale.US)
+    return formatFileSize(roundedBytes, false, Locale.US)
   }
 
   private fun formatFileSize(roundedBytes: Long, shorter: Boolean, locale: Locale): String {

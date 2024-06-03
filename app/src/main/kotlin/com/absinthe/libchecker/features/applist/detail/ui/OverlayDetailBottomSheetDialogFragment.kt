@@ -3,7 +3,6 @@ package com.absinthe.libchecker.features.applist.detail.ui
 import android.content.pm.PackageInfoHidden
 import android.content.pm.PackageManager
 import android.text.SpannableString
-import android.text.format.Formatter
 import android.text.style.ImageSpan
 import androidx.core.os.BundleCompat
 import androidx.core.text.buildSpannedString
@@ -16,6 +15,7 @@ import com.absinthe.libchecker.database.entity.LCItem
 import com.absinthe.libchecker.features.applist.detail.ui.view.CenterAlignImageSpan
 import com.absinthe.libchecker.features.applist.detail.ui.view.OverlayDetailBottomSheetView
 import com.absinthe.libchecker.utils.FileUtils
+import com.absinthe.libchecker.utils.Formatter
 import com.absinthe.libchecker.utils.PackageUtils
 import com.absinthe.libchecker.utils.Toasty
 import com.absinthe.libchecker.utils.extensions.copyToClipboard

@@ -1,8 +1,8 @@
 package com.absinthe.libchecker.utils.extensions
 
 import android.content.Context
-import android.text.format.Formatter
 import com.absinthe.libchecker.constant.Constants
+import com.absinthe.libchecker.utils.Formatter
 import java.io.File
 
 fun String.isTempApk(): Boolean {

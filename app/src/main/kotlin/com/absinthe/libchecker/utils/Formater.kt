@@ -1,6 +1,6 @@
 package com.absinthe.libchecker.utils
 
-import android.content.Context;
+import android.content.Context
 import java.util.Locale
 
 object Formater {

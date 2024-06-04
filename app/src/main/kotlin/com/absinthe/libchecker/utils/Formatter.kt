@@ -54,7 +54,7 @@ object Formatter {
       value = String.format(locale, "%.0f", result)
     }
     if (isNegative) {
-      value = "-" + value;
+      value = "-" + value
     }
     return String.format("%s%s", value, suffix)
   }

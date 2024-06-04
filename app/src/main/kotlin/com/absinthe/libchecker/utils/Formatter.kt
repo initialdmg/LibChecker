@@ -12,7 +12,7 @@ object Formatter {
   }
 
   private fun formatFileSize(roundedBytes: Long, shorter: Boolean, locale: Locale): String {
-    val isNegative = (roundedBytes < 0);
+    val isNegative = (roundedBytes < 0)
     var result: Float = if (isNegative) -roundedBytes.toFloat() else roundedBytes.toFloat()
     var suffix = "B"
     if (result > 900) {

@@ -12,7 +12,8 @@ object Formatter {
   }
 
   private fun formatFileSize(roundedBytes: Long, shorter: Boolean, locale: Locale): String {
-    var result = roundedBytes.toFloat()
+    var isNegative = (roundedBytes < 0);
+    val result: Float = if (isNegative) -roundedBytes.toFloat() else roundedBytes.toFloat()
     var suffix = "B"
     if (result > 900) {
       suffix = "KB"
@@ -51,6 +52,9 @@ object Formatter {
       }
     } else {
       value = String.format(locale, "%.0f", result)
+    }
+    if (isNegative) {
+      value = "-" + value;
     }
     return String.format("%s%s", value, suffix)
   }

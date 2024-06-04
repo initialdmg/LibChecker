@@ -12,8 +12,8 @@ object Formatter {
   }
 
   private fun formatFileSize(roundedBytes: Long, shorter: Boolean, locale: Locale): String {
-    var isNegative = (roundedBytes < 0);
-    val result: Float = if (isNegative) -roundedBytes.toFloat() else roundedBytes.toFloat()
+    val isNegative = (roundedBytes < 0);
+    var result: Float = if (isNegative) -roundedBytes.toFloat() else roundedBytes.toFloat()
     var suffix = "B"
     if (result > 900) {
       suffix = "KB"

@@ -35,7 +35,7 @@ object Formatter {
       suffix = "PB"
       result = result / 1024
     }
-    val value: String
+    var value: String
     if (result < 1) {
       value = String.format(locale, "%.2f", result)
     } else if (result < 10) {
